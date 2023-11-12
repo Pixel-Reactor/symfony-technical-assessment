@@ -1,0 +1,23 @@
+controllers:
+    resource:
+        path: ../src/Controller/
+        namespace: App\Controller
+    type: attribute
+
+
+ping:
+    path: api/ping
+    controller: App\Controller\PingController::ping
+
+
+getall:
+    path: api/all
+    controller: App\Controller\GetAllController::getAllMovies
+
+movie:
+    path: api/movie/{id}
+    controller: App\Controller\GetDetailsController::getmovie
+
+addmovie:
+    path: api/add/movie
+    controller: App\Controller\AddMovieController::addmovie
