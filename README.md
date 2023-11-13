@@ -1,5 +1,5 @@
 
-# Project Title
+# Title
 
 Synfony movie storage technical assessment
 
@@ -16,20 +16,21 @@ This allow to make a personal db movie storage with selected movies retrieving f
 #### Connection check
 
 ```http
-  GET api/ping
+/api/ping
 ```
 
-Type      | Description                 |
- :------- | :------------------------- |
- `string` | Send a request to the db to return current time to check connection|
+| Method  | Type      | Description                 |
+| :--------| :-------  | :------------------------- |
+| `GET`    |`string`   | Send a request to the db to return current time to check connection|
 
 #### Store item
 
+
 ```http
-  POST /api/add/movie/
+ /api/add/movie/
 ```
 
-| Request | Type     | Description                       |
+| Method | Type     | Description                       |
 | :-------- | :------- | :-------------------------------- |
 | `POST`      | `JSON` | **Required fields** name,id  |
 
@@ -38,11 +39,12 @@ Type      | Description                 |
 Add a new movie to the db. The field name is the name you want to use to store the movie and the id is the movie id from themoviedb api to collect full details
 
 #### List all stored movies
+
 ```http
-  GET /api/all/
+/api/all/
 ```
 
-| Request | Description                       |
+| Method | Description                       |
 | :-------- |  :-------------------------------- |
 | `GET`      |  **Required fields** Retrieve all stored data  |
 
@@ -54,10 +56,10 @@ Retrieve all Movies stored in the database  and send an array of them with full 
 #### Movie details only
 
 ```http
-  GET api/movie/:id
+api/movie/:id
 ```
 
-| Request | Description                       |
+|Method | Description                       |
 | :-------- |  :-------------------------------- |
 | `GET`      |  **Required fields** id  |
 
