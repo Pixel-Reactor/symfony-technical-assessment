@@ -62,7 +62,6 @@ class AddMovieController extends AbstractController
 
             // Realizar la inserción en la base de datos
             $entityManager->flush();
-
             $title = $movieDetails->getTitle();
             $id = $movieDetails->getId();
             $name = $movieDetails->getName();

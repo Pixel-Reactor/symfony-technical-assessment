@@ -48,9 +48,5 @@ class GetDetailsController extends AbstractController
         } catch (\Throwable $th) {
             return $this->json(['error' => 'Server error' . $th->getMessage()], 404);
         }
-
-       
-
-      
     }
 }

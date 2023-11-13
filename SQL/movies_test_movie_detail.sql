@@ -1,5 +1,5 @@
-CREATE DATABASE  IF NOT EXISTS `movies`;
-USE `movies`;
+CREATE DATABASE  IF NOT EXISTS `movies_test`;
+USE `movies_test`;
 
 
 DROP TABLE IF EXISTS `movie_detail`;
@@ -22,4 +22,3 @@ CREATE TABLE `movie_detail` (
   `original_language` varchar(20) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-

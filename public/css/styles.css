@@ -1,0 +1,42 @@
+body{
+    background-color: whitesmoke;
+    color: rgba(19, 17, 17, 0.877);
+    padding: 20px;
+    font-size: 18px;
+}
+code{
+    background-color: rgba(17, 7, 7, 0.055);
+    padding: 5px 20px;
+    border-radius: 2px;
+}
+article{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    line-height: 25px;
+    font-size: 18px;
+}
+article div:nth-child(1){
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 5px;
+}
+
+.get{
+    background-color: rgba(40, 184, 40, 0.712);
+    padding: 2px 8px;
+    border-radius: 5px;
+    border: 1px solid rgba(128, 128, 128, 0.349);
+    font-weight: bold;
+    color: rgba(31, 30, 30, 0.87);
+}
+.post{
+    background-color: rgba(235, 203, 20, 0.74);
+    padding: 2px 8px;
+    border-radius: 10px;
+    border: 1px solid rgba(128, 128, 128, 0.349);
+    font-weight: bold;
+    color: rgba(31, 30, 30, 0.87);
+}

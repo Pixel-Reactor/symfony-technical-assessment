@@ -9,9 +9,8 @@ class AddMovieControllerTest extends WebTestCase
         $client = static::createClient();
 
         $data = [
-            'name' => 'Lord of the Rings',
-            'id' => 321,
-            // Agrega otros campos necesarios aquí según tus requisitos
+            'name' => 'Oppenhaimer',
+            'id' => 872585,
         ];
         $client->request(
             'POST',
@@ -23,20 +22,15 @@ class AddMovieControllerTest extends WebTestCase
         );
         $statusCode = $client->getResponse()->getStatusCode();
        
-      
-
         if ($statusCode !== 200){
             $responseData = json_decode($client->getResponse()->getContent(), true);
             $this->assertArrayHasKey('error', $responseData);
             $this->assertEquals(401,$statusCode);
             return;
         }  
-        
         $this->assertEquals(200, $statusCode);
         $this->assertJson($client->getResponse()->getContent());
 
         $responseData = json_decode($client->getResponse()->getContent(), true);
-
-      
     }
 }
